@@ -1,0 +1,40 @@
+[class*="typingDots_"]:has(.cti-emojis) [class*="dots_"] { display: none !important; }
+[class*="typingDots_"]:has(.cti-emojis) { margin-left: calc(var(--cti-shift, 26) * -1px) !important; }
+.cti-emojis { display: inline-flex; align-items: center; gap: 3px; margin-right: 5px; vertical-align: middle; }
+.cti-emojis > * { width: 18px; height: 18px; object-fit: contain; font-size: 16px; line-height: 18px; }
+@keyframes cti-pulse {
+  0% { transform: scale(1); animation-timing-function: ease-in-out; }
+  17.5% { transform: scale(1.16); }
+  23% { transform: scale(1.16); animation-timing-function: ease-in-out; }
+  40.5%, 100% { transform: scale(1); }
+}
+@keyframes cti-ring {
+  0.00% { transform: translate(0.56px, -0.03px); }
+  6.25% { transform: translate(0.16px, 0.08px); }
+  12.50% { transform: translate(-0.25px, 0.06px); }
+  18.75% { transform: translate(-0.65px, -0.07px); }
+  25.00% { transform: translate(-0.96px, -0.42px); }
+  31.25% { transform: translate(-1.08px, -0.82px); }
+  37.50% { transform: translate(-1.07px, -1.26px); }
+  43.75% { transform: translate(-0.92px, -1.67px); }
+  50.00% { transform: translate(-0.60px, -1.96px); }
+  56.25% { transform: translate(-0.16px, -2.08px); }
+  62.50% { transform: translate(0.27px, -2.08px); }
+  68.75% { transform: translate(0.68px, -1.92px); }
+  75.00% { transform: translate(0.97px, -1.59px); }
+  81.25% { transform: translate(1.08px, -1.18px); }
+  87.50% { transform: translate(1.07px, -0.73px); }
+  93.75% { transform: translate(0.90px, -0.34px); }
+  100.00% { transform: translate(0.57px, -0.03px); }
+}
+@keyframes cti-wave {
+  0% { transform: translateY(0); animation-timing-function: ease-in-out; }
+  14.5% { transform: translateY(-2px); }
+  24.4% { transform: translateY(-2px); animation-timing-function: ease-in-out; }
+  40.5%, 100% { transform: translateY(0); }
+}
+.cti-pulse > * { animation: cti-pulse 1.31s infinite; }
+.cti-ring > * { animation: cti-ring 1.61s linear infinite; }
+.cti-wave > * { animation: cti-wave 1.31s infinite; }
+@media (prefers-reduced-motion: reduce) { .cti-emojis > * { animation: none !important; } }
+.cti-text { display: inline-block; max-width: var(--cti-max-width, 400px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; padding: 3px 0; margin: -3px 0; }
