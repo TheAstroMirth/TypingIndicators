@@ -174,7 +174,7 @@ const hook = (obj: any, name: string) => {
 export default definePlugin({
     name: "TypingIndicators",
     description: "Shows other users' custom typing indicators (emojis, status word, animation) in the native typing bar",
-    authors: [{ name: "ItzMeShadow999", id: 0n }],
+    authors: [{ name: "AstroMirth", id: 1456018726074847285n }],
     settings,
 
     flux: {
