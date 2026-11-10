@@ -12,23 +12,12 @@ Displays other users' custom typing indicators, including emojis, status text an
 
 This repository is a ready-to-install distribution of the plugin, with simple installers and uninstallers for **Windows and macOS**.
 
-Maintained by [TheAstroMirth](https://github.com/TheAstroMirth). The origin of the plugin code is described under [Credits and licence](#credits-and-licence).
+Developed and maintained by [TheAstroMirth](https://github.com/TheAstroMirth).
 
 > [!WARNING]
 > **Unofficial third-party plugin.** It is not made, reviewed or supported by Discord, Vencord or Equicord. Client modifications are against Discord's Terms of Service. You install and use it at your own discretion and risk.
 
 ## Screenshots
-
-Screenshots have not been added yet. They belong in the [`screenshots`](screenshots) folder:
-
-| File | Shows |
-| --- | --- |
-| `screenshots/before.png` | The typing bar without the plugin |
-| `screenshots/after.png` | The typing bar with TypingIndicators enabled |
-
-<!--
-Once both images are in the screenshots folder, remove the text and table above
-and uncomment this block:
 
 ### Before
 
@@ -37,7 +26,6 @@ and uncomment this block:
 ### After
 
 ![Typing bar with TypingIndicators](screenshots/after.png)
--->
 
 ## Features
 
@@ -238,15 +226,14 @@ Use `install.bat`, not `install.ps1` directly. The `.bat` file starts PowerShell
 - **Windows scripts:** written for Windows PowerShell 5.1 with the same safeguards as the macOS scripts. Checked statically (structure, variable and command names, PowerShell 7-only syntax), but **not yet run in PowerShell**.
 - Not yet tested on real Windows or macOS hardware, and the plugin's behaviour was not checked inside a running Discord client. Reports are welcome.
 
-## Credits and licence
+## Licence
 
-This project is owned and maintained by [TheAstroMirth](https://github.com/TheAstroMirth), who wrote the Windows and macOS installers and uninstallers, the packaging and this documentation.
+This project is distributed under the **GNU General Public License v3.0**.
+See [LICENSE](LICENSE) for the full licence terms and [NOTICE.md](NOTICE.md)
+for the required copyright and licence information.
 
-The plugin code in the `TypingIndicators` folder is third-party work by ItzMeShadow999 (<https://github.com/ItzMeShadow999/TypingIndicators>) and is included unmodified under its licence.
-
-Licensed under the **GNU General Public License v3.0**, the same licence as the original project. See [LICENSE](LICENSE) for the full text and [NOTICE.md](NOTICE.md) for the origin of each part and the list of changes.
-
-Issues with the installers or this documentation: <https://github.com/TheAstroMirth/TypingIndicators/issues>
+Issues, suggestions or bug reports:
+<https://github.com/TheAstroMirth/TypingIndicators/issues>
 
 ## Disclaimer
 
